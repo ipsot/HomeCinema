@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище HomeCinemaModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HomeCinemaManufacturer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="manufacturer" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HomeCinemaSpecification">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idManufacturer" Type="int" Nullable="false" />
+    <Property Name="permission" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="brightness" Type="int" Nullable="false" />
+    <Property Name="contrast" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_HomeCinemaSpecification_HomeCinemaManufacturer">
+    <End Role="HomeCinemaManufacturer" Type="Self.HomeCinemaManufacturer" Multiplicity="1" />
+    <End Role="HomeCinemaSpecification" Type="Self.HomeCinemaSpecification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HomeCinemaManufacturer">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HomeCinemaSpecification">
+        <PropertyRef Name="idManufacturer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище HomeCinemaModelContainer">
+    <EntitySet Name="HomeCinemaManufacturer" EntityType="Self.HomeCinemaManufacturer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HomeCinemaSpecification" EntityType="Self.HomeCinemaSpecification" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_HomeCinemaSpecification_HomeCinemaManufacturer" Association="Self.FK_HomeCinemaSpecification_HomeCinemaManufacturer">
+      <End Role="HomeCinemaManufacturer" EntitySet="HomeCinemaManufacturer" />
+      <End Role="HomeCinemaSpecification" EntitySet="HomeCinemaSpecification" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище HomeCinemaModelContainer" CdmEntityContainer="HomeCinemaEntities">
+    <EntitySetMapping Name="HomeCinemaManufacturer">
+      <EntityTypeMapping TypeName="HomeCinemaModel.HomeCinemaManufacturer">
+        <MappingFragment StoreEntitySet="HomeCinemaManufacturer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="manufacturer" ColumnName="manufacturer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HomeCinemaSpecification">
+      <EntityTypeMapping TypeName="HomeCinemaModel.HomeCinemaSpecification">
+        <MappingFragment StoreEntitySet="HomeCinemaSpecification">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idManufacturer" ColumnName="idManufacturer" />
+          <ScalarProperty Name="permission" ColumnName="permission" />
+          <ScalarProperty Name="brightness" ColumnName="brightness" />
+          <ScalarProperty Name="contrast" ColumnName="contrast" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

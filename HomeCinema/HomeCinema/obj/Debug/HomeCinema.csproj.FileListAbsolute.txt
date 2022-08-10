@@ -1,0 +1,15 @@
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\bin\Debug\HomeCinema.exe.config
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\bin\Debug\HomeCinema.exe
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\bin\Debug\HomeCinema.pdb
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\bin\Debug\EntityFramework.dll
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\bin\Debug\EntityFramework.xml
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\obj\Debug\HomeCinema.csprojAssemblyReference.cache
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\obj\Debug\HomeCinema.Form1.resources
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\obj\Debug\HomeCinema.Properties.Resources.resources
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\obj\Debug\HomeCinema.csproj.GenerateResource.cache
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\obj\Debug\HomeCinema.csproj.CopyComplete
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\obj\Debug\HomeCinema.exe
+C:\Users\mort8\source\repos\HomeCinema\HomeCinema\obj\Debug\HomeCinema.pdb
